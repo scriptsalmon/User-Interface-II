@@ -1,1 +1,118 @@
-/* Add CSS styling here */
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+body {
+    background-color: #1C1C1C;
+}
+
+.siteName {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: ghostwhite;
+    opacity: 0.5;
+    height: 350px;
+}
+
+header nav a {
+    font-size: 3rem;
+    background-color: ghostwhite;
+    text-decoration: none;
+    padding: 0;
+}
+
+header nav a:hover {
+    background-color: ghostwhite;
+    color: darkgreen;
+}
+
+.headerNav a:hover {
+    color: white;
+}
+
+header h1, h2 {
+    font-size: 3rem;
+    padding: 0%;
+}
+
+header p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    padding-bottom: 1%;
+}
+
+.topContent {
+    background:url(https://picsum.photos/1500);
+    height: 30vh;
+    width: 98%;
+    padding: 1%;
+    margin-top: 1%;
+    /* border: solid 2px red; */
+}
+
+.topContent image {
+    height: 45vh;
+    width: 20vw;
+    justify-content: space-between;
+    align-content: center;
+    /* border: solid 2px purple; */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.bottomContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    /* border: solid 2px purple; */
+    margin-top: 1%;
+}
+
+.bottomContent div {
+    height: 45vh;
+    width: 15vw;
+    align-content: center;
+    background: url(https://picsum.photos/300);
+    /* border: solid 2px purple; */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer {
+    display: flex;
+    height: 10vh;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+
+.footButton a {
+    text-decoration: none;
+}
