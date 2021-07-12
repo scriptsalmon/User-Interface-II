@@ -1,1 +1,298 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* body {
+	line-height: 1;
+} */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/*General Styles*/
+
+html {
+    font-size: 62.5%;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+body {
+    background-color: #59CD90;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1% 5%;
+    width: 50%;
+    text-align: center;
+}
+
+.siteName {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5%;
+}
+
+.siteName:hover {
+    font-size: 1.5rem;
+    transition: 0.2;
+}
+
+/*Header Style Sheet*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: ghostwhite;
+    height: 50%;
+    border: solid 4px #F79D84;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    width: 35%;
+}
+
+.headerNav a {
+    font-size: 1.8rem;
+    color: black;
+    text-decoration: none;
+    padding: 2.3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 2%;
+    /* border: solid 1px black; */
+}
+
+header p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    height: 10vh;
+    padding-bottom: 1%;
+    overflow: scroll;
+    margin: 2%;
+}
+
+#index{
+    background: #59CD90;
+    color: #FAC05E;
+}
+
+#index:hover{
+    background: #FAC05E;
+    color: #59CD90;
+}
+
+#about {
+    background: #3FA7D6;
+    color: #FAC05E;
+}
+
+#about:hover {
+    background: #FAC05E;
+    color: #3FA7D6;
+}
+
+#contact {
+    background: #EE6352;
+    color: #FAC05E;
+}
+
+#contact:hover {
+    background: #FAC05E;
+    color: #EE6352;
+}
+
+#projects {
+    background: #F79D84;
+    color: black;
+}
+
+#projects:hover {
+    background: #FAC05E;
+    color: black;
+}
+
+/*Content Section Styles*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.topContent {
+    background:url(https://picsum.photos/1500);
+    height: 30vh;
+    width: 90%;
+    padding: 1%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.topContent image {
+    height: 45vh;
+    width: 20%;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 1%;
+}
+
+.bottomContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.bottomContent div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 15vw;
+    align-content: center;
+    background: url(https://picsum.photos/300);
+    border-radius: 1%;
+}
+
+#textSection {
+    background-color: red;
+}
+
+.text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.textSection text:hover {
+    scale: 1.1%;
+}
+
+/*Footer Section Styles*/
+
+footer {
+    font-size: 2rem;
+    height: 50px;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAC05E;
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Media Queries*/
+
+@media(max-width: 800px){
+    body {
+        background-color: rgb(128, 185, 128);
+    }
+}
+
+@media(max-width: 500px){
+    body {
+        background-color: rgb(9, 114, 9);
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    .headerNav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+    }
+
+    .headerNav a {
+        margin: 1%;
+    }
+
+    header p {
+        overflow: scroll;
+        margin: 2%;
+    }
+
+    .bottomContent {
+        flex-wrap: wrap;
+        width: 90%;
+        margin-top: 1%;
+    }
+    
+    .bottomContent div {
+        flex-wrap: wrap;
+        width: 40%;
+        margin: 2%;
+    }
+}
